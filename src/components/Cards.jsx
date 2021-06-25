@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import Card from './Card'
 
 const Cards = () => {
@@ -35,7 +35,13 @@ const Cards = () => {
         <>
         {
             data.map(({lang, url, fcolor, scolor})=> {
-                return <Card key={lang} lang={lang} url={url} />      
+                return <Card 
+                    key={lang} 
+                    lang={lang} 
+                    url={url} 
+                    fcolor={fcolor} 
+                    scolor={scolor} 
+                />      
             })
         }
         </>
