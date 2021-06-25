@@ -1,11 +1,11 @@
 import React from 'react';
 import './Card.css'
 
-const Card = () => {
+const Card = ({ lang, url }) => {
     return (
         <div className="card">
-            <img src="#" alt="lang.svg" />
-            <h3>Lenguaje</h3>
+            <img src= { url } alt="lang.svg" />
+            <h3>{ lang }</h3>
         </div>
     )
 }
